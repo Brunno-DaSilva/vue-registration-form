@@ -1,0 +1,63 @@
+<template>
+  <div class="custom-button">
+    <button>Login</button>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "CustomButton",
+  };
+</script>
+
+<style lang="scss">
+  $dark-nav-bg: #252525;
+  $main-active-bg: #ffdcba;
+  $light-gray: #c0c0c0;
+
+  .custom-button {
+    min-width: 10.3125rem;
+    width: auto;
+    height: 3.12rem;
+    letter-spacing: 0.05rem;
+    line-height: 3.12rem;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 0.72rem;
+    background-color: var(--main-active-bg);
+    color: var(--dark-nav-bg);
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: #ffffff;
+      color: var(--dark-nav-bg);
+      border: 1px solid var(--dark-nav-bg);
+    }
+
+    &.google-sign-in {
+      background: $light-gray;
+      color: $dark-nav-bg;
+      &:hover {
+        background-color: #ffffff;
+        border: 1px solid var(--dark-nav-bg);
+      }
+    }
+    &.inverted {
+      color: $dark-nav-bg;
+      background-color: #ffffff;
+      border: 1px solid var(--dark-nav-bg);
+
+      &:hover {
+        background-color: #ffffff;
+        border: none;
+        background-color: var(--main-active-bg);
+        color: var(--dark-nav-bg);
+      }
+    }
+  }
+</style>

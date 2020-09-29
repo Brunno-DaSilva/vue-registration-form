@@ -1,5 +1,11 @@
 # registration-form
 
+
+Simple registration Form featuring Vue.JS 3v and Surge for deployment!
+
+Demo:
+
+---
 ## Project setup
 ```
 yarn install
