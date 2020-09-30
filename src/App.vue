@@ -1,9 +1,19 @@
 <template>
   <div class="app">
     <div class="app__container">
-      <div class="container__left"></div>
+      <div class="container__left">
+        <img src="./assets/North-logo.png" alt="main registration picture" />
+      </div>
       <div class="container__right">
-        <Login />
+        <div class="registration">
+          <div class="registration__img">
+            <img src="./assets/North-logo-name.png" />
+          </div>
+        </div>
+
+        <form>
+          <Login />
+        </form>
       </div>
     </div>
   </div>
@@ -31,7 +41,8 @@
   body {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     overflow: hidden !important;
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background-color: #085575;
+    background-image: linear-gradient(225deg, #085575 0%, #20cd7e 100%);
   }
   #app {
     width: 100vw;
@@ -43,12 +54,45 @@
   }
   .app {
     width: 80%;
-    min-height: 80%;
-    margin: 3rem;
-    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: #ffffff;
   }
+
   .app__container {
-    min-height: 80%;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container__right,
+  .container__left {
+    width: 72%;
+    height: 100%;
+  }
+
+  .container__left {
+    width: 38%;
+  }
+  .container__left img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  .container__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__right form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width: 70%;
   }
 </style>

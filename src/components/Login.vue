@@ -22,7 +22,7 @@
   $main-color: #252525;
 
   @mixin shrinkLabel {
-    top: -14px;
+    top: -2px;
     font-size: 12px;
     color: $main-color;
   }
@@ -35,7 +35,7 @@
       background-color: #ffffff;
       color: #444444;
       font-size: 18px;
-      padding: 10px 10px 10px 5px;
+      padding: 1rem;
       display: block;
       width: 100%;
       border: none;
