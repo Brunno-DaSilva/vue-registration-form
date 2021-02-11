@@ -2,12 +2,15 @@
   <div class="app">
     <div class="app__container">
       <div class="container__left">
-        <img src="./assets/North-logo.png" alt="main registration picture" />
+        <img
+          src="./assets/North-left-img-01.svg"
+          alt="main registration picture"
+        />
       </div>
       <div class="container__right">
         <div class="registration">
           <div class="registration__img">
-            <img src="./assets/North-logo-name.png" />
+            <img src="./assets/logocampass.png" />
           </div>
         </div>
 
@@ -92,7 +95,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     width: 70%;
   }
 </style>
