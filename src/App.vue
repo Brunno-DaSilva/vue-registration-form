@@ -10,7 +10,7 @@
       <div class="container__right">
         <div class="registration">
           <div class="registration__img">
-            <img src="./assets/logocampass.png" />
+            <img src="./assets/NorthADRace_300x300.png" />
           </div>
         </div>
 
